@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a:hover {
+    color: #D6E9FE;
+}
+
+.headerlink {
+    margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.blog {
+    padding: 64px 2em;
+}
+
+.title {
+  padding: 4px 16px;
+}
+
+.date {
+  margin: 32px 32px 8px 32px;
+  font-size: 0.8em;
+}
+
+.post {
+  margin: 16px 32px 0 32px;
+}
+
+.post ol {
+  margin: 32px 32px 32px 32px;
+  line-height: 1.75em;
+}
+
+.profilepic {
+    width: 300px;
+    float: left;
+    padding: 10px;
+}
+
+.about {
+    padding: 40px;
+    line-height: 1.25em;
+}
+
+.emphasis {
+    color: blueviolet;
+}
