@@ -3,7 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
 
+body {
+  justify-content: center;
+  background: whitesmoke;
+  
+}
+
+.container {
+  margin: 0 10%;
+  width: 80%;
+  max-width: 1200px;
 }
 
 .menu-container {
@@ -25,16 +36,28 @@
     justify-content: flex-end;
 }
 
-a, h1, h2 {
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+a {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 a:hover {
-    color: #D6E9FE;
+  color: #D6E9FE;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+a:visited:hover {
+  color: #D6E9FE;
 }
 
 .headerlink {
-    margin-left: 20px;
+  margin-left: 20px;
     
 }
 
@@ -57,9 +80,13 @@ a:hover {
 
 }
 
-.blog {
-    padding: 45px 2em;
+.blog-container {
+  background: white;
+  margin-bottom: 12em;
+}
 
+.blog {
+  padding: 45px 2em;
 }
 
 .title {
@@ -82,9 +109,9 @@ a:hover {
 }
 
 .profilepic {
-    width: 300px;
-    float: left;
-    padding: 10px;
+  width: 300px;
+  float: left;
+  padding: 10px;
 }
 
 .aboutsection {
@@ -92,13 +119,17 @@ a:hover {
 }
 
 .about {
-    padding-left: 40px;
-    padding-top: 20px;
-    line-height: 1.25em;
-    font-family: 'Open Sans', sans-serif;
-
+  padding-left: 40px;
+  padding-top: 20px;
+  line-height: 1.25em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .emphasis {
-    color: blueviolet;
+  color: blueviolet;
+}
+
+.bg {
+  border: solid transparent;
+  background: white;
 }
