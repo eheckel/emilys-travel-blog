@@ -5,6 +5,18 @@
   font-family: 'Roboto', sans-serif;
 }
 
+/* Possible color scheme:
+  #7dc2ad light green/teal
+#f28288 coral
+#5ab0dc turquoise blue
+#fac2c1 light pink
+#0093a2 dark teal
+#f9a076 orange
+#fdd0ae peach
+
+
+*/
+
 /* Mobile AND Tablet Styles (includes both! equality! */
 @media only screen and (max-width: 960px) {
   .menu {
@@ -19,7 +31,7 @@
     justify-content: center;
     padding: 20px 0;
     width: 100%;
-    background-color: #538dd1;
+    background-color: #f28288;
   }
   
   .box2 {
@@ -27,7 +39,7 @@
     justify-content: center;
     width: 100%;
     padding: 20px 0;
-    background-color: #679fe0;
+    background-color: #f8babd;
   }
   
   .box3 {
@@ -35,12 +47,12 @@
     justify-content: center;
     width: 100%;
     padding: 20px 0;
-    background-color: #71abed;
+    background-color: #fad1d3;
   }
 
   .bg {
     border: solid transparent;
-    background: white;
+    background: #0093a2;
     display: flex;
     order: 1;
   }
@@ -49,13 +61,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #679fe0;
+    background-color: #0093a2;
   }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  
 }
 
 /* Desktop Styles */
@@ -71,7 +78,7 @@
     justify-content: center;
     padding: 20px 0;
     width: 34%;
-    background-color: #538dd1;
+    background-color: #f28288;
   }
   
   .box2 {
@@ -79,7 +86,7 @@
     justify-content: center;
     width: 33%;
     padding: 20px 0;
-    background-color: #679fe0;
+    background-color: #f8babd;
   }
   
   .box3 {
@@ -87,12 +94,12 @@
     justify-content: center;
     width: 34%;
     padding: 20px 0;
-    background-color: #71abed;
+    background-color: #fad1d3;
   }
 
   .bg {
     border: solid transparent;
-    background: white;
+    background: #0093a2;
   }
 
   .container {
@@ -102,17 +109,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #679fe0;
+    background-color: white;
   }
 }
 
 /* Common Styles */
 
 .header-container {
-  color: #5995DA;
-  background-color: #D6E9FE;
+  color: white;
+  text-shadow: 2px 2px black;
+  background-image: url('cope.png');
   display: flex;
   justify-content: center;
+  border-bottom: 5px solid #f28288;
+  border-top: 5px solid #f28288;
 }
 
 .header {
@@ -123,12 +133,14 @@
   align-items: center;
   text-align: center;
   font-size: 50px;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
   justify-content: center;
-  background: whitesmoke;
+  color: white;
+  background: #7dc2ad;
 }
 
 h1, h2 {
@@ -151,7 +163,7 @@ a:visited:hover {
 }
 
 .blog-container {
-  background: white;
+  background: #0093a2;
   margin-bottom: 12em;
 }
 
