@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cph426-2019/travel-notes-eheckel#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.4.5"
   }
 }
