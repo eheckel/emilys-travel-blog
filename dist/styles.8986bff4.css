@@ -50,6 +50,14 @@
     background-color: #fad1d3;
   }
 
+  .box4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fce8e9;
+  }
+
   .bg {
     border: solid transparent;
     background: #0093a2;
@@ -95,6 +103,14 @@
     width: 34%;
     padding: 20px 0;
     background-color: #fad1d3;
+  }
+
+  .box4 {
+    display: flex;
+    justify-content: center;
+    width: 34%;
+    padding: 20px 0;
+    background-color: #fce8e9;
   }
 
   .bg {
@@ -209,6 +225,10 @@ a:visited:hover {
 
 .emphasis {
   color: blueviolet;
+}
+
+.gallery {
+  color: black;
 }
 
 .gallery__master {
