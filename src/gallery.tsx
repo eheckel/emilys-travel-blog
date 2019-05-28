@@ -15,7 +15,8 @@ let main = () => {
 
 type Image = {
     src: string,
-    thumbSrc: string
+    thumbSrc: string,
+    caption: string
 }
 
 type GalleryProps = {
@@ -41,6 +42,7 @@ class Gallery extends React.Component<GalleryProps, GalleryState> {
             <ul className="gallery__master">{
                 this.props.images.map((image, index) => {
                     return <Thumbnail 
+                        selected={image === this.state.selected ? true : false}
                         image={image}
                         // or key={image.src}
                         key={index}
@@ -48,6 +50,9 @@ class Gallery extends React.Component<GalleryProps, GalleryState> {
                      />
                 })
             }</ul>
+            <div className="gallery__caption">
+                {this.state.selected.caption}
+            </div>
             <div className="gallery__detail">
                 <div className="gallery__detail-img-wrap">
                     <img className="gallery__detail-img"
@@ -68,11 +73,12 @@ class Gallery extends React.Component<GalleryProps, GalleryState> {
 type ThumbnailProps = {
     image: Image,
     onSelect?: (image: Image) => void,
+    selected: boolean,
 }
 
 class Thumbnail extends React.Component<ThumbnailProps> {
     render() {
-        return <li className={"gallery__thumb"}>
+        return <li className={`gallery__thumb ${this.props.selected ? "selected" : ""}`}>
             <div onClick={()=>this.clickHandler()} className="gallery__thumb-img-wrap">
                 <img 
                     className="gallery__thumb-img" 

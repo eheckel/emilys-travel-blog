@@ -2,30 +2,37 @@ export default [
     {
         "thumbSrc": "./thumbs/B47C0164-1412-4379-BBD8-B238BC889FC2.JPG",
         "src": "./img/B47C0164-1412-4379-BBD8-B238BC889FC2.JPG",
+        "caption": "AROS art museum"
     },
     {
         "thumbSrc": "./thumbs/IMG_0224.jpg",
         "src": "./img/IMG_0224.jpg",
+        "caption": "Rooftop in Aarhus"
     },
     {
         "thumbSrc": "./thumbs/IMG_0280.jpg",
         "src": "./img/IMG_0280.jpg",
+        "caption": "Rosenborg castle park"
     },
     {
         "thumbSrc": "./thumbs/IMG_0350.jpg",
         "src": "./img/IMG_0350.jpg",
+        "caption": "Rooftop cafe on Strøget"
     },
     {
         "thumbSrc": "./thumbs/IMG_0441.jpg",
         "src": "./img/IMG_0441.jpg",
+        "caption": "Rooftop outlook onto Aarhus"
     },
     {
         "thumbSrc": "./thumbs/IMG_0979.jpg",
         "src": "./img/IMG_0979.jpg",
+        "caption": "A statue of a boy in AROS museum"
     },
     {
         "thumbSrc": "./thumbs/IMG_1252.jpg",
         "src": "./img/IMG_1252.jpg",
+        "caption": "Rosenborg castle"
     },
     {
         "thumbSrc": "./thumbs/IMG_1288.jpg",

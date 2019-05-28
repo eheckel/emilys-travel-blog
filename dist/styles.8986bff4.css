@@ -228,17 +228,12 @@ a:visited:hover {
   align-items: center;
 }
 
-.gallery__thumb.selected .gallery__thumb-img-wrap {
-  border: 2px solid #333;
-}
-
 .gallery__thumb:hover {
   cursor: pointer;
 }
 
 .gallery__thumb-img-wrap {
   display: block;
-  border: 2px solid black;
   width: 19vh;
   height: 19vh;
   display: flex;
@@ -264,6 +259,14 @@ a:visited:hover {
   margin-top: 2vh;
   max-height: 78vh;
   max-width: 98vw;
+}
+
+.gallery__caption {
+  text-align: center;
+}
+
+.gallery__thumb.selected .gallery__thumb-img-wrap {
+  border: solid 1px white;
 }
 
 /*# sourceMappingURL=/styles.8986bff4.css.map */
