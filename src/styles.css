@@ -286,5 +286,5 @@ a:visited:hover {
 }
 
 .gallery__thumb.selected .gallery__thumb-img-wrap {
-  border: solid 1px white;
+  border: solid 1px black;
 }
