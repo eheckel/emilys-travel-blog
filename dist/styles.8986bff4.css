@@ -24,34 +24,42 @@
 /* Mobile AND Tablet Styles (includes both! equality! */
 @media only screen and (max-width: 960px) {
   .logo {
-    order: 1;
-    width: 200px;
+    width: 250px;
   }
 
   .left-link-group {
-    order: 2;
     display: flex;
     width: 900px;
     padding-left: 40px;
+    flex-direction: column;
+    padding-top: 60px;
   }
 
   .right-link-group {
-    order: 3;
     display: flex;
     width: 900px;
     align-content: right;
     padding-right: 40px;
     justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 60px;
   }
 
   .header {
     width: 600px;
-    height: 100px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .header-link {
+    color: #476c4f;
+    height: 40px;
+    line-height: 15px;
+    text-align: center;
   }
 
   .menu {
@@ -105,6 +113,14 @@
     font-family: 'Josefin Sans', sans-serif;
   }
 
+  .header-link {
+    color: #476c4f;
+    height: 150px;
+    line-height: 200px;
+    text-align: center;
+    padding: 10px;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
@@ -131,14 +147,6 @@
 .header-container {
   display: flex;
   justify-content: center;
-}
-
-.header-link {
-  color: #476c4f;
-  height: 150px;
-  line-height: 200px;
-  text-align: center;
-  padding: 10px;
 }
 
 body {
