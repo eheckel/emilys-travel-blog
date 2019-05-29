@@ -15,10 +15,45 @@
 #fdd0ae peach
 
 
+#A8F2EA light turquoise
+  #35513B hunter green
+
+
 */
 
 /* Mobile AND Tablet Styles (includes both! equality! */
 @media only screen and (max-width: 960px) {
+  .logo {
+    order: 1;
+    width: 200px;
+  }
+
+  .left-link-group {
+    order: 2;
+    display: flex;
+    width: 900px;
+    padding-left: 40px;
+  }
+
+  .right-link-group {
+    order: 3;
+    display: flex;
+    width: 900px;
+    align-content: right;
+    padding-right: 40px;
+    justify-content: flex-end;
+  }
+
+  .header {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
@@ -26,41 +61,8 @@
     flex-direction: column;
   }
 
-  .box1 {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 100%;
-    background-color: #f28288;
-  }
-  
-  .box2 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #f8babd;
-  }
-  
-  .box3 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #fad1d3;
-  }
-
-  .box4 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #fce8e9;
-  }
-
   .bg {
     border: solid transparent;
-    background: #0093a2;
     display: flex;
     order: 1;
   }
@@ -69,53 +71,48 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #0093a2;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .logo {
+    order: 1;
+    width: 250px;
+  }
+
+  .left-link-group {
+    display: flex;
+    width: 900px;
+    padding-left: 40px;
+  }
+
+  .right-link-group {
+    display: flex;
+    width: 900px;
+    align-content: right;
+    padding-right: 40px;
+    justify-content: flex-end;
+  }
+
+  .header {
+    width: 900px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .box1 {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    width: 34%;
-    background-color: #f28288;
-  }
-  
-  .box2 {
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    padding: 20px 0;
-    background-color: #f8babd;
-  }
-  
-  .box3 {
-    display: flex;
-    justify-content: center;
-    width: 34%;
-    padding: 20px 0;
-    background-color: #fad1d3;
-  }
-
-  .box4 {
-    display: flex;
-    justify-content: center;
-    width: 34%;
-    padding: 20px 0;
-    background-color: #fce8e9;
-  }
-
   .bg {
     border: solid transparent;
-    background: #0093a2;
   }
 
   .container {
@@ -132,35 +129,27 @@
 /* Common Styles */
 
 .header-container {
-  color: white;
-  text-shadow: 2px 2px black;
-  background-image: url('/cope.5ec41441.png');
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid #f28288;
-  border-top: 5px solid #f28288;
 }
 
-.header {
-  width: 900px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-link {
+  color: #476c4f;
+  height: 150px;
+  line-height: 200px;
   text-align: center;
-  font-size: 50px;
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
+  padding: 10px;
 }
 
 body {
   justify-content: center;
-  color: white;
-  background: #7dc2ad;
+  color: black;
+  background: #ecfdfb;
 }
 
 h1, h2 {
   font-family: 'Merriweather', serif;
+  color: #476c4f;
 }
 
 a {
@@ -171,15 +160,15 @@ a {
 
 
 a:hover {
-  color: #D6E9FE;
+  color: #A8F2EA;
 }
 
 a:visited:hover {
-  color: #D6E9FE;
+  color: #A8F2EA;
 }
 
 .blog-container {
-  background: #0093a2;
+  background: white;
   margin-bottom: 12em;
 }
 
@@ -194,6 +183,7 @@ a:visited:hover {
 .date {
   margin: 16px 32px 8px 32px;
   font-size: 0.8em;
+  color: #476c4f;
 }
 
 .post {
