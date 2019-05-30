@@ -6,7 +6,7 @@
 }
 
 /* Possible color scheme:
-  #7dc2ad light green/teal
+#7dc2ad light green/teal
 #f28288 coral
 #5ab0dc turquoise blue
 #fac2c1 light pink
@@ -16,7 +16,7 @@
 
 
 #A8F2EA light turquoise
-  #35513B hunter green
+#35513B hunter green
 
 
 */
@@ -156,8 +156,9 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Raleway', sans-serif;
   color: #476c4f;
+  margin: 16px 32px 8px 32px;
 }
 
 a {
@@ -178,6 +179,7 @@ a:visited:hover {
 .blog-container {
   background: white;
   margin-bottom: 12em;
+  padding-top: 20px;
 }
 
 .blog {
@@ -196,7 +198,8 @@ a:visited:hover {
 
 .post {
   margin: 16px 32px 0 32px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 27px;
 }
 
 .post ol {
