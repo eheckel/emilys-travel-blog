@@ -50,14 +50,16 @@ class Gallery extends React.Component<GalleryProps, GalleryState> {
                      />
                 })
             }</ul>
-            <div className="gallery__caption">
-                {this.state.selected.caption}
-            </div>
-            <div className="gallery__detail">
-                <div className="gallery__detail-img-wrap">
-                    <img className="gallery__detail-img"
-                        src={this.state.selected.src}>
-                    </img>
+            <div className="gallery__selected">
+                <div className="gallery__caption">
+                    {this.state.selected.caption}
+                </div>
+                <div className="gallery__detail">
+                    <div className="gallery__detail-img-wrap">
+                        <img className="gallery__detail-img"
+                            src={this.state.selected.src}>
+                        </img>
+                    </div>
                 </div>
             </div>
         </div>;

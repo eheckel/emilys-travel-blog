@@ -230,14 +230,24 @@ a:visited:hover {
 
 .gallery {
   color: black;
+  display: flex;
+  flex-direction: row;
 }
 
 .gallery__master {
   list-style: none;
   font-size: 0.75em;
   display: flex;
-  overflow-x: auto;
-  height: 20vh;
+  overflow-y: auto;
+  flex-direction: column;
+  height: 80vh;
+  width: 130px;
+  float: left;
+}
+
+.gallery__master li {
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .gallery__thumb {
@@ -247,6 +257,7 @@ a:visited:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .gallery__thumb:hover {
@@ -260,6 +271,7 @@ a:visited:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .gallery__thumb-img {
@@ -271,15 +283,17 @@ a:visited:hover {
 
 .gallery__detail-img-wrap {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: right;
   justify-content: center;
-  height: 78vh;
+
 }
 
 .gallery__detail-img {
   margin-top: 2vh;
   max-height: 78vh;
   max-width: 98vw;
+  margin-left: 10vh;
 }
 
 .gallery__caption {
