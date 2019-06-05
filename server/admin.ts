@@ -4,11 +4,17 @@ import { DB, Rows, InsertResult } from './db';
 
 import * as bcrypt from 'bcrypt';
 
+import * as cookieParser from 'cookie-parser';
+
 let path = (req: express.Request): string => {
     return `${req.baseUrl}${req.path}`;
 }
 
 let router = express.Router();
+
+// Cookie parser will read and write secure cookies that
+// are protected by our cookie secret
+router.use(cookieParser(process.env.COOKIE_SECRET));
 
 // Login form
 router.get('/login', (req, res) => {
@@ -18,17 +24,41 @@ router.get('/login', (req, res) => {
     });
 });
 
+
+
 router.get('/', (req, res) => {
     res.render('admin/index', {
         layout: 'admin',
-    })
-})
+    });
+});
 
 // Test password validity
 router.post('/login', async (req, res) => {
-    const SALT_ROUNDS = 12;
-    res.send(await bcrypt.hash(req.body.password, SALT_ROUNDS));
-})
+    let isValid = await bcrypt.compare(req.body.password, process.env.ADMIN_PASSWORD_HASH);
+    if (isValid) {
+        res.cookie('authenticated', 'true', {
+            signed: true // by using the signed option, our cookie is secure
+        });
+        res.redirect(`${req.baseUrl}`); // Redirect to admin home page
+    } else {
+        res.redirect(`${req.baseUrl}/login?message=Password Incorrect`);
+    }
+});
+
+// Logout
+router.get('/logout', (req, res) => {
+    res.clearCookie('authenticated');
+    res.redirect(`${req.baseUrl}/login`)
+});
+
+// Middleware to authenticate the user
+router.use((req, res, next) => {
+    if (req.signedCookies.authenticated) {
+        next();
+    } else {
+        return res.redirect(`${req.baseUrl}/login`);
+    }
+});
 
 // For listing all todos
 router.get('/todos', async (req, res) => {
@@ -36,7 +66,7 @@ router.get('/todos', async (req, res) => {
     res.render('admin/todos/index', {
         todos: rows,
         layout: 'admin'
-    })
+    });
 });
 
 // Defining this route above todos/:id to be sure it gets
@@ -76,7 +106,7 @@ router.post('/todos', async (req, res) => {
         console.error(e);
         res.redirect(`${path(req)}?message=Error Saving`);
     }
-})
+});
 
 // For viewing the editor of an existing todo
 router.get('/todos/:id', async (req, res) => {
