@@ -1,0 +1,49 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+    <li class="breadcrumb-item"><a href="/admin/posts">Posts</a></li>
+    <li class="breadcrumb-item active" aria-current="page">
+        {{# if post.id }}
+            {{ post.title }}
+        {{else}}
+            New
+        {{/if}}
+    </li>
+  </ol>
+</nav>
+
+<form action="{{ action }}" method="POST">
+    {{# if message }}
+        <div class="alert alert-dark">{{ message }}</div>
+    {{/if}}
+    <div class="form-group">
+        <label for="description">Title</label>
+        <input type="text" name="title" id="title" class="form-control" value="{{ post.title }}">
+        {{!-- WILL NEED FOR BLOG but add bootstrap style: <textarea name="description">
+            {{{ description }}}
+        </textarea> --}}
+        <small class="form-text text-muted">Title your post</small>
+    </div>
+    <div class="form-group md-form">
+        <label for="form7">Body</label>
+        <textarea id="body" name="body" class="md-textarea form-control" rows="3">{{ post.body }}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="url">Published at</label>
+        <input type="text" name="publishAt" id="publishAt" class="form-control" value="{{ post.publishAt }}">
+        <small class="form-text text-muted">What's today's date?</small>
+    </div>
+    <div class="form-group">
+        <label for="url">Post from</label>
+        <input type="text" name="postedAt" id="postedAt" class="form-control" value="{{ post.postedAt }}">
+        <small class="form-text text-muted">What day was this? This will show on the post.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="/admin/posts" class="btn btn-secondary">Back</a>
+</form>
+{{# if post.id }}
+<hr>
+<form action="{{ action }}/delete" method="POST" onsubmit="return confirm('Are you sure?')">
+    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+</form>
+{{/if}}
