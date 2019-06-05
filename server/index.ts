@@ -4,6 +4,10 @@ dotenv.config();
 import * as express from 'express';
 import * as exphbs from 'express-handlebars';
 
+import { DB, Rows } from './db';
+
+// since router is default in ./admin, the router is called admin here
+import admin from './admin';
 
 let app = express();
 app.set('view engine', 'hbs');
@@ -12,10 +16,12 @@ app.engine('hbs', exphbs({
     defaultLayout: 'default',
     extname: 'hbs',
 }));
+
 app.use(express.static('dist/'));
+app.use(express.urlencoded({extended: true}));
 
 app.get('/', async (req, res) => {
-    let [rows] = await DB.query<Rows>("SELECT * FROM posts ORDER BY publishAt DESC");
+    let [rows] = await DB.query<Rows>('SELECT * FROM posts ORDER BY publishAt DESC');
     res.render('index', {pageTitle: "Emily's Travel Blog", posts: rows});
 })
 
@@ -30,8 +36,6 @@ app.get('/gallery', (req, res) => {
 app.get('/todo', (req, res) => {
     res.render('todo', { pageTitle: "Bucket List - Emily's Travel Blog" });
 });
-
-import { DB, Rows } from './db';
 
 app.get('/todos.json', async (req, res) => {
     let [rows] = await DB.query<Rows>("SELECT * FROM todos");
@@ -57,6 +61,8 @@ app.get('/posts.json', async (req, res) => {
     let [rows] = await DB.query<Rows>("SELECT * FROM posts");
     res.json(rows);
 })
+
+app.use('/admin', admin);
 
 export let main = async () => {
     app.listen(process.env.PORT, () => console.log(`Listening on ${process.env.PORT}`))

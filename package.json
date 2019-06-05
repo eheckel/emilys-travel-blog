@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node server/index.ts",
-    "build": "parcel build client/{*.css,gallery.tsx,main.ts}",
+    "build": "rm -rf dist && parcel build client/{*.css,gallery.tsx,main.ts}",
     "prod": "git pull && npm install && npm run build && sudo NODE_ENV=production npm run start",
     "deploy": "ssh blog 'sudo service blog_app restart'"
   },
@@ -35,6 +35,8 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "bcrypt": "^3.0.6",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
