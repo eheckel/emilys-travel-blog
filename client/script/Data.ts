@@ -25,38 +25,42 @@ export default [
         "caption": "Rooftop outlook onto Aarhus"
     },
     {
-        "thumbSrc": "./thumbs/IMG_0979.jpg",
-        "src": "./img/IMG_0979.jpg",
+        "thumbSrc": "./thumbs/IMG_0453.JPG",
+        "src": "./img/IMG_0453.JPG",
+    },
+    {
+        "thumbSrc": "./thumbs/IMG_0979.JPG",
+        "src": "./img/IMG_0979.JPG",
         "caption": "A statue of a boy in AROS museum"
     },
     {
-        "thumbSrc": "./thumbs/IMG_1252.jpg",
-        "src": "./img/IMG_1252.jpg",
+        "thumbSrc": "./thumbs/IMG_1252.JPG",
+        "src": "./img/IMG_1252.JPG",
         "caption": "Rosenborg castle"
     },
     {
-        "thumbSrc": "./thumbs/IMG_1288.jpg",
-        "src": "./img/IMG_1288.jpg",
+        "thumbSrc": "./thumbs/IMG_1288.JPG",
+        "src": "./img/IMG_1288.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_1483.jpg",
-        "src": "./img/IMG_1483.jpg",
+        "thumbSrc": "./thumbs/IMG_1483.JPG",
+        "src": "./img/IMG_1483.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_2538.jpg",
-        "src": "./img/IMG_2538.jpg",
+        "thumbSrc": "./thumbs/IMG_2538.JPG",
+        "src": "./img/IMG_2538.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_3019.jpg",
-        "src": "./img/IMG_3019.jpg",
+        "thumbSrc": "./thumbs/IMG_3019.JPG",
+        "src": "./img/IMG_3019.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_3034.jpg",
-        "src": "./img/IMG_3034.jpg",
+        "thumbSrc": "./thumbs/IMG_3034.JPG",
+        "src": "./img/IMG_3034.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_3231.jpg",
-        "src": "./img/IMG_3231.jpg",
+        "thumbSrc": "./thumbs/IMG_3231.JPG",
+        "src": "./img/IMG_3231.JPG",
     },
     {
         "thumbSrc": "./thumbs/IMG_3420.jpg",
@@ -67,60 +71,60 @@ export default [
         "src": "./img/IMG_3421.jpg",
     },
     {
-        "thumbSrc": "./thumbs/IMG_5077.jpg",
-        "src": "./img/IMG_5077.jpg",
+        "thumbSrc": "./thumbs/IMG_5077.JPG",
+        "src": "./img/IMG_5077.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_5121.jpg",
-        "src": "./img/IMG_5121.jpg",
+        "thumbSrc": "./thumbs/IMG_5121.JPG",
+        "src": "./img/IMG_5121.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_5618.jpg",
-        "src": "./img/IMG_5618.jpg",
+        "thumbSrc": "./thumbs/IMG_5618.JPG",
+        "src": "./img/IMG_5618.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_5901.jpg",
-        "src": "./img/IMG_5901.jpg",
+        "thumbSrc": "./thumbs/IMG_5901.JPG",
+        "src": "./img/IMG_5901.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_6475.jpg",
-        "src": "./img/IMG_6475.jpg",
+        "thumbSrc": "./thumbs/IMG_6475.JPG",
+        "src": "./img/IMG_6475.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_7113.jpg",
-        "src": "./img/IMG_7113.jpg",
+        "thumbSrc": "./thumbs/IMG_7113.JPG",
+        "src": "./img/IMG_7113.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_7526.jpg",
-        "src": "./img/IMG_7526.jpg",
+        "thumbSrc": "./thumbs/IMG_7526.JPG",
+        "src": "./img/IMG_7526.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_8643.jpg",
-        "src": "./img/IMG_8643.jpg",
+        "thumbSrc": "./thumbs/IMG_8643.JPG",
+        "src": "./img/IMG_8643.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_8959.jpg",
-        "src": "./img/IMG_8959.jpg",
+        "thumbSrc": "./thumbs/IMG_8959.JPG",
+        "src": "./img/IMG_8959.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9467.jpg",
-        "src": "./img/IMG_9467.jpg",
+        "thumbSrc": "./thumbs/IMG_9467.JPG",
+        "src": "./img/IMG_9467.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9469.jpg",
-        "src": "./img/IMG_9469.jpg",
+        "thumbSrc": "./thumbs/IMG_9469.JPG",
+        "src": "./img/IMG_9469.JPG",
     },
     {
         "thumbSrc": "./thumbs/IMG_9512.jpg",
         "src": "./img/IMG_9512.jpg",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9593.jpg",
-        "src": "./img/IMG_9593.jpg",
+        "thumbSrc": "./thumbs/IMG_9593.JPG",
+        "src": "./img/IMG_9593.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9594.jpg",
-        "src": "./img/IMG_9594.jpg",
+        "thumbSrc": "./thumbs/IMG_9594.JPG",
+        "src": "./img/IMG_9594.JPG",
     },
     {
         "thumbSrc": "./thumbs/IMG_9696.jpg",
@@ -131,32 +135,32 @@ export default [
         "src": "./img/IMG_9704.jpg",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9706.jpg",
-        "src": "./img/IMG_9706.jpg",
+        "thumbSrc": "./thumbs/IMG_9706.PNG",
+        "src": "./img/IMG_9706.PNG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9775.jpg",
-        "src": "./img/IMG_9775.jpg",
+        "thumbSrc": "./thumbs/IMG_9775.JPG",
+        "src": "./img/IMG_9775.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9776.jpg",
-        "src": "./img/IMG_9776.jpg",
+        "thumbSrc": "./thumbs/IMG_9776.JPG",
+        "src": "./img/IMG_9776.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9783.jpg",
-        "src": "./img/IMG_9783.jpg",
+        "thumbSrc": "./thumbs/IMG_9783.JPG",
+        "src": "./img/IMG_9783.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9789.jpg",
-        "src": "./img/IMG_9789.jpg",
+        "thumbSrc": "./thumbs/IMG_9789.JPG",
+        "src": "./img/IMG_9789.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9825.jpg",
-        "src": "./img/IMG_9825.jpg",
+        "thumbSrc": "./thumbs/IMG_9825.JPG",
+        "src": "./img/IMG_9825.JPG",
     },
     {
-        "thumbSrc": "./thumbs/IMG_9874.jpg",
-        "src": "./img/IMG_9874.jpg",
+        "thumbSrc": "./thumbs/IMG_9874.JPG",
+        "src": "./img/IMG_9874.JPG",
     },
     {
         "thumbSrc": "./thumbs/-8187213672245527655_IMG_6506.JPG",
