@@ -90,7 +90,7 @@ router.get('/posts/new', (req, res) => {
     });
 });
 
-// making a new post
+// Putting a new post in database
 router.post('/posts', async (req, res) => {
     try {
         let sql = `INSERT INTO posts (title, body, publishAt, postedAt) VALUES (:title, :body, :publishAt, :postedAt)`;
@@ -111,6 +111,7 @@ router.post('/posts', async (req, res) => {
     }
 });
 
+// Show the post or redirect
 router.get('/posts/:id', async (req, res) => {
     let sql = 'SELECT * FROM posts WHERE id=:id';
     let params = { id: req.params.id };
@@ -132,6 +133,8 @@ router.get('/posts/:id', async (req, res) => {
     }
 });
 
+
+// Update the post
 router.post('/posts/:id', async (req, res) => {
     try {
         // You can use mysql workbench to generate this sql with specific values
@@ -157,6 +160,8 @@ router.post('/posts/:id', async (req, res) => {
     }
 });
 
+
+// Delete the post
 router.post('/posts/:id/delete', async (req, res) => {
     let sql = "DELETE FROM posts WHERE id=:id";
     let params = {
@@ -268,6 +273,5 @@ router.post('/todos/:id/delete', async (req, res) => {
         res.redirect(`${path(req)}/../../`);
     }
 });
-
 
 export default router;
