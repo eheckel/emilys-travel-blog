@@ -1,0 +1,13 @@
+<div class='container'>
+    <ul>
+        {{#each todos}}
+            <li>
+                {{#if url}}
+                    <a href={{url}}>{{description}}</a>
+                {{else}}
+                    {{ description }}
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
